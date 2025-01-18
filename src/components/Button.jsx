@@ -1,7 +1,7 @@
 import React from "react";
 
 const Button = ({ children, className = "", btnType = "filled", ...props }) => {
-    // Define button styles based on the `btnType` prop
+  
     const buttonStyles =
         btnType === "outline"
             ? "border border-2 text-black bg-transparent text-sm" // Outline style
@@ -10,7 +10,7 @@ const Button = ({ children, className = "", btnType = "filled", ...props }) => {
     return (
         <button
             {...props}
-            className={`rounded-md px-4 py-2 ${buttonStyles} ${className}`}
+            className={`px-4 py-2 ${buttonStyles} ${className}`}
         >
             {children}
         </button>

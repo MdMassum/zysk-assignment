@@ -1,13 +1,14 @@
 import React from "react";
 import userImage from "../../../assets/userImage.png";
+import flash from "../../../assets/flash.png";
 
 const Testimonial = () => {
     return (
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 bg-gray-50 mt-5">
             <div className="max-w-3xl mx-auto text-center px-4">
                 {/* Logo Section */}
-                <div className="flex justify-center items-center mb-4">
-                    <img src="" alt="" />
+                <div className="flex justify-center items-center mb-4 gap-2">
+                    <img src={flash} alt="" className="h-6" />
                     <span className="font-semibold text-lg text-gray-800">Sisyphus</span>
                 </div>
 

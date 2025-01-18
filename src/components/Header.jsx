@@ -3,24 +3,30 @@ import logo from '../assets/logo.png'
 import avatar from '../assets/Avatar.png'
 import MobileHeader from './MobileHeader'
 import { Link } from 'react-router-dom'
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+
 
 
 export const links = [
     {
         label:"Home",
-        href:"#"
+        href:"#",
+        dropdown:false
     },
     {
         label:"Products",
-        href:"#"
+        href:"#",
+        dropdown:true
     },
     {
         label:"Resources",
-        href:"#"
+        href:"#",
+        dropdown:true
     },
     {
         label:"Pricing",
-        href:"#"
+        href:"#",
+        dropdown:false
     },
 ]
 const Header = () => {
@@ -34,13 +40,16 @@ const Header = () => {
                 {
                     <div className="flex gap-7">
                     {links.map((link, index) => (
-                        <Link
+                        <div className='flex gap-1 items-center justify-center hover:text-rose-500'>
+                            <Link
                             key={index}
                             to={link.href}
                             className="block font-semibold text-gray-600 hover:text-rose-500"
                         >
                             {link.label}
                         </Link>
+                        {link.dropdown && <MdOutlineKeyboardArrowDown className='mt-1'/>}
+                        </div>
                     ))}
                     </div>
                 }

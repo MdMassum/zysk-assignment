@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col gap-2 md:flex-row justify-between text-gray-500 text-xs mt-6 mx-3 md:mx-16 border-t border-gray-300">
+      <div className="flex flex-col gap-2 md:flex-row justify-between items-start md:items-center text-gray-500 text-xs mt-6 mx-3 md:mx-16 border-t border-gray-300">
         <img src={logo} alt="logo" className="mt-3 w-20"/>
         <p>© 2077 zysktechnologies. All rights reserved.</p>
       </div>

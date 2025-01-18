@@ -20,7 +20,7 @@ const images = [
 
 function HeroSection() {
   return (
-    <div className='flex flex-col gap-4 mt-8 justify-between items-center md:w-[85%] mx-auto p-5 md:p-4 text-black'>
+    <div className='flex flex-col gap-4 mt-4 md:mt-8 justify-between items-center md:w-[85%] mx-auto p-5 md:p-4 text-black'>
 
 
         <div className='flex border border-rose-500 text-rose-600 py-1 gap-3 text-sm md:text-base rounded-2xl'>
@@ -40,7 +40,7 @@ function HeroSection() {
         </div>
 
         {/* Hero image */}
-        <div className='border-2 rounded-lg border-black'>
+        <div className='border-2 rounded-lg border-black mt-6'>
             <img src={HeroImage} alt="" />
         </div>
 

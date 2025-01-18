@@ -1,5 +1,8 @@
 import React from "react";
 import Button from "./Button";
+import avatar1 from '../assets/Avatar1.png'
+import avatar2 from '../assets/Avatar2.png'
+import avatar3 from '../assets/Avatar3.png'
 
 const ContactSection = () => {
   return (
@@ -8,17 +11,17 @@ const ContactSection = () => {
         {/* Profile images */}
         <img
           className="w-10 h-10 rounded-full border border-gray-300"
-          src={""}
+          src={avatar2}
           alt="Profile 1"
         />
         <img
           className="w-10 h-10 rounded-full border border-gray-300"
-          src={""}
+          src={avatar1}
           alt="Profile 2"
         />
         <img
           className="w-10 h-10 rounded-full border border-gray-300"
-          src={""}
+          src={avatar3}
           alt="Profile 3"
         />
       </div>
@@ -28,7 +31,7 @@ const ContactSection = () => {
         team.
       </p>
  
-      <Button>Get In Touch</Button>
+      <Button className="rounded-md mb-2">Get In Touch</Button>
     </div>
   );
 };

@@ -4,6 +4,8 @@ import Features from './components/Features'
 import Testimonial from './components/Testimonial'
 import FAQ from './components/FAQ'
 import ContactSection from '../../components/ContactSection'
+import BlogSection from './components/BlogSection'
+import FreeTrialSection from '../../components/FreeTrialSection'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
         <Testimonial/>
         <FAQ/>
         <ContactSection/>
+        <BlogSection/>
+        <FreeTrialSection/>
     </div>
   )
 }
