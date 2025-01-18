@@ -7,6 +7,7 @@ import compLogo3 from '../../../assets/compLogo3.png'
 import compLogo4 from '../../../assets/compLogo4.png'
 import compLogo5 from '../../../assets/compLogo5.png'
 import compLogo6 from '../../../assets/compLogo6.png'
+import { FiPlayCircle } from "react-icons/fi";
 
 
 const images = [
@@ -35,8 +36,12 @@ function HeroSection() {
         <p className='text-gray-600 md:max-w-[70%] text-center'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
 
         <div className='flex flex-col md:flex-row gap-3 w-full md:max-w-28'>
-            <Button btnType='outline' className='rounded-3xl'>Demo</Button>
+
+            <button className="flex items-center justify-center gap-1 px-6 py-2 bg-white border border-gray-300 rounded-3xl text-gray-700 hover:bg-gray-100">
+                <FiPlayCircle/> Demo
+            </button>
             <Button className='rounded-3xl'>Signup</Button>
+
         </div>
 
         {/* Hero image */}
